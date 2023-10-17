@@ -2,7 +2,7 @@ import java.util.*;
 
 class areafunction
 {
-	void area(int v,int l,int b)
+	void area(int l,int b)
 		{
 			int a;
 			a=l*b;
@@ -14,10 +14,10 @@ class areafunction
 			a=(float)3.14*r*r;
 			System.out.println("Area of Circle= "+a);
 		}
-	void area(int b,int h)
+	void area(float b,float h)
 		{
 			float a;
-			a=(float)(b*h)/2;
+			a=(b*h)/2;
 			System.out.println("Area of Triangle= "+a);
 		}					
 }
@@ -37,11 +37,11 @@ class areafigures
 			int radius=input.nextInt();
 			System.out.println("Triangle");
 			System.out.print("Enter height :");
-			int height=input.nextInt();
+			float height=input.nextInt();
 			System.out.print("Enter base length :");
-			int base=input.nextInt();
+			float base=input.nextInt();
 			areafunction x=new areafunction();
-			x.area(1,length,bredth);
+			x.area(length,bredth);
 			x.area(radius);
 			x.area(base,height);
 		}
